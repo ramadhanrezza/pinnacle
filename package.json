@@ -1,0 +1,25 @@
+{
+  "name": "pnc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "SET NODE_ENV=dev && node server.js",
+    "test": "mocha ./test/book.js --timeout 10000 --exit",
+    "coverage": "nyc --reporter html --reporter text npm test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "express": "^4.17.1",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^2.5.3",
+    "nyc": "^14.1.1"
+  }
+}
